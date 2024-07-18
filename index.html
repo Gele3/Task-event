@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Transactions</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styel.css">
+</head>
+
+<body class="bg-body-secondary">
+
+    <h1 class="text-center py-4">Customer Transactions</h1>
+
+<div class="container">
+    <div class="row row-cols-lg-2">
+            <div class="container tabel ">
+                <table class="table mt-4 text-center">
+                    <thead>
+                        <tr >
+                            <th class="bg-body-secondary p-3">Customer Name</th>
+                            <th class="bg-body-secondary p-3">Total Amount</th>
+                            <th class="bg-body-secondary p-3">Transactions graph</th>
+                        </tr>
+                    </thead>
+                    <tbody id="transactionTable" class="bg-body-secondary">
+                        
+                    </tbody>
+                </table>
+            </div>
+        
+            <div id="chartContainer" class="pt-5">
+                <canvas id="transactionChart"></canvas>
+            </div>
+    </div>
+</div>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
